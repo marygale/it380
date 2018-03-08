@@ -25,4 +25,4 @@ Setup a database on your local environment with the following credentials:
 | Database username | [test] |
 | Database password | [test123] |
 
-Initial load will run a sql script create tables and migrate data from the clean csv to the database.
+Initial load will run a sql script to create tables and migrate data from the clean csv to the database.
