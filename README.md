@@ -6,7 +6,7 @@ Song Recommendation using Association Rule
 
 > - a clean csv file is already provided for database population
 > - the csv "unique_jam.csv" and "jav10.csv" are the result from the R script "jam_rules.R"
-
+> - refer to github link https://github.com/marygale/it380
 
 ### Installation
 
