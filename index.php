@@ -53,8 +53,11 @@
         );
         fnAjax(url, 'GET', 'JSON', { 'data':'jam' }, function(result){
                 if(result.status = 'ok'){
-                    $('.msg').append(result.msg);console.log('hhlhl ');
-                    /*if(goHome == true)*/ window.location = 'home.php';
+                    $('.msg').append(result.msg);
+                    setTimeout(function() {
+                        window.location = 'home.php';
+                    }, 2000);
+                    /*if(goHome == true)*/
                 }
             },
         );
