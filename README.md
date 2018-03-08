@@ -1,6 +1,6 @@
 # IT380 Introduction to Data Mining using R
 
-###BY: 👨‍🔧 Angelo Dan Bagasbas and 👩‍🔧Mary Gale Jabagat
+#### BY: 👨‍🔧 Angelo Dan Bagasbas and 👩‍🔧Mary Gale Jabagat
 
 Song Recommendation using Association Rule
 
