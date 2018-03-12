@@ -47,20 +47,20 @@
         fnAjax(url, 'GET', 'JSON', { 'data':'songs' }, function(result){
                 if(result.status = 'done'){
                     $('.msg').html(result.msg);
-                    //goHome = true
+                    fnAjax(url, 'GET', 'JSON', { 'data':'jam' }, function(result){ console.log(result);
+                            if(result.status = 'done'){
+                                $('.msg').append(result.msg);
+                                 setTimeout(function() {
+                                     window.location = 'home.php';
+                                 }, 3000);
+                                /*if(goHome == true)*/
+                            }
+                        },
+                    );
                 }
             },
         );
-        fnAjax(url, 'GET', 'JSON', { 'data':'jam' }, function(result){
-                if(result.status = 'done'){
-                    $('.msg').append(result.msg);
-                    setTimeout(function() {
-                        window.location = 'home.php';
-                    }, 3000);
-                    /*if(goHome == true)*/
-                }
-            },
-        );
+
     });
     function fnAjax(sUrl, sType, sDataType, oData, fnSuccess, fnError){
         return $.ajax({

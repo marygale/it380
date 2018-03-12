@@ -13,11 +13,11 @@ class database{
         }
     }
 
-    public function check_table_exist()
+    public function check_table_exist($tbl = null)
     {
         $exist = false;
         try{
-            $sql = "SELECT * FROM songs LIMIT 1";
+            $sql = "SELECT * FROM ".$tbl." LIMIT 1";
             $stmt = $this->con->prepare($sql);
             $stmt->execute();
             if ($stmt->rowCount() > 0) {
