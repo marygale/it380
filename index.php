@@ -47,7 +47,7 @@
         fnAjax(url, 'GET', 'JSON', { 'data':'songs' }, function(result){
                 if(result.status = 'done'){
                     $('.msg').html(result.msg);
-                    fnAjax(url, 'GET', 'JSON', { 'data':'jam' }, function(result){ console.log(result);
+                    fnAjax(url, 'GET', 'JSON', { 'data':'jam' }, function(result){
                             if(result.status = 'done'){
                                 $('.msg').append(result.msg);
                                  setTimeout(function() {
