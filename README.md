@@ -25,4 +25,5 @@ Setup a database on your local environment with the following credentials:
 | Database username | root |
 | Database password |  |
 
+If test database name already exist on your phpmyadmin make sure no table are present under these database name.
 Initial load will run a sql script to create tables and migrate data from the clean csv to the database.
