@@ -21,8 +21,8 @@ Setup a database on your local environment with the following credentials:
 
 |Field  | Value|
 | ------ | ------ |
-| Database name | [test] |
-| Database username | [test] |
-| Database password | [test123] |
+| Database name | test |
+| Database username | root |
+| Database password |  |
 
 Initial load will run a sql script to create tables and migrate data from the clean csv to the database.
