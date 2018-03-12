@@ -2,7 +2,7 @@ LOAD DATA LOCAL INFILE '../csv/unique_jam.csv'
 INTO TABLE songs
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
+LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS
 (song_id,artist,title)
 SET created_at=CURRENT_TIMESTAMP,updated_at=CURRENT_TIMESTAMP;
