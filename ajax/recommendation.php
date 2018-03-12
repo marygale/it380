@@ -9,6 +9,7 @@ try{
 }
 
 $id = isset($_GET['song_id']) ? $_GET['song_id'] : '';
+$jam_result = [];
 $query = "SELECT * FROM jam_rule2 WHERE lhs LIKE :search ORDER BY confidence LIMIT 10;";//SELECT * FROM jam_rule2 ORDER BY confidence, `desc` LIMIT 10
 $stmt = $con->prepare($query);
 $stmt->bindValue(':search', '%' . $id . '%');
@@ -32,8 +33,10 @@ foreach ($jam_result as $row){
     $stmt->bindValue(':rhs', $row['rhs']);
     $stmt->execute();
     foreach($stmt->fetchAll() as $r){
-        $row['song_name'] = $r['artist'] . ' - ' . $r['title'];
+        if($row['rhs'] == $r['song_id']){
+            $row['song_name'] = $r['artist'] . ' - ' . $r['title'];
+            array_push($result, $row);
+        }
     }
-    array_push($result, $row);
 }
 echo json_encode($result);

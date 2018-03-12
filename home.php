@@ -119,7 +119,7 @@
             success : function(data){
                 $('.loader').addClass('hide');
                 $('#recommended ul').html('');
-                $.each(data, function(k, v) {
+                $.each(data, function(k, v) { console.log(v);
                     $('#recommended ul').append("<li class='list-group-item'><button type='button' class='btn btn-info btn-circle' onclick=\"add_recommended(\'"+v.rhs+"\',\'"+v.song_name+"\')\"><i class='fas fa-plus'></i></button>"+v.song_name+"</li>");
                 });
             }
