@@ -2,7 +2,7 @@
 
 #### BY: 👨‍🔧 Angelo Dan Bagasbas and 👩‍🔧Mary Gale Jabagat
 
-![IT380](https://media.giphy.com/media/3GBPfNBcKoJ47ceJDH/giphy.gif)
+![IT380](https://im2.ezgif.com/tmp/ezgif-2-b2b26f49c6.gif)
 
 Song Recommendation using Association Rule
 
