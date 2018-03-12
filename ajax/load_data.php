@@ -3,7 +3,6 @@ include_once '../database.php';
 
 $bDone = false;
 $arData = [];
-$arData['status'] = 'ok';
 if($_GET['data'] == 'songs'){
     $db = new database();
     if(!$db->check_table_exist()){
@@ -25,7 +24,7 @@ if($_GET['data'] == 'jam'){
         $res = $db->load_data('../script/migrate_jam_rule_data.sql');
         if($res){
             $arData['msg'] .= '<br/>jam_rule data migrated successfully';
-            if($bDone) $arData['redirect'] = true;
+            if($bDone) $arData['status'] = 'done';
         }
     }
 }

@@ -45,18 +45,18 @@
         //var goHome = false;
         var url = 'ajax/load_data.php';
         fnAjax(url, 'GET', 'JSON', { 'data':'songs' }, function(result){
-                if(result.status = 'ok'){
+                if(result.status = 'done'){
                     $('.msg').html(result.msg);
                     //goHome = true
                 }
             },
         );
         fnAjax(url, 'GET', 'JSON', { 'data':'jam' }, function(result){
-                if(result.status = 'ok'){
+                if(result.status = 'done'){
                     $('.msg').append(result.msg);
                     setTimeout(function() {
                         window.location = 'home.php';
-                    }, 2000);
+                    }, 3000);
                     /*if(goHome == true)*/
                 }
             },
