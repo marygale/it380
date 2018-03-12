@@ -2,6 +2,8 @@
 
 #### BY: 👨‍🔧 Angelo Dan Bagasbas and 👩‍🔧Mary Gale Jabagat
 
+![IT380](https://media.giphy.com/media/3GBPfNBcKoJ47ceJDH/giphy.gif)
+
 Song Recommendation using Association Rule
 
 > - a clean csv file is already provided for database population
