@@ -24,7 +24,7 @@ $ cd it380
 To setup the database, edit [config.php](config.php) these following lines:
 
 ```php
-define( "DB_NAME", "it380" );
+define( "DB_NAME", "test" );
 define( "DB_HOST", "localhost" );
 define( "DB_USERNAME", "root" );
 define( "DB_PASSWORD", "" );
