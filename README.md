@@ -2,7 +2,7 @@
 
 ## Authors
 * **👨‍🔧 Angelo Dan Bagasbas**
-* **👩‍🔧Mary Gale Jabagat** - [GaleJabagat](https://github.com/marygale)
+* **👩‍🔧 [Mary Gale Jabagat](https://github.com/marygale)**
 
 ![IT380](https://media.giphy.com/media/1X60lbjgvCGZozIucj/giphy.gif)
 
@@ -34,6 +34,3 @@ define( "DB_PASSWORD", "" );
 ```
 http://localhost/it380
 ```
-
-If test database name already exist on your phpmyadmin make sure no table are present under these database name.
-Initial load will run a sql script to create tables and migrate data from the clean csv to the database.
