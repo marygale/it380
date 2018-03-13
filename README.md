@@ -1,6 +1,8 @@
 # IT380 Introduction to Data Mining using R
 
-#### BY: 👨‍🔧 Angelo Dan Bagasbas and 👩‍🔧Mary Gale Jabagat
+## Authors
+* **👨‍🔧 Angelo Dan Bagasbas**
+* **👩‍🔧Mary Gale Jabagat** - [GaleJabagat](https://github.com/marygale)
 
 ![IT380](https://media.giphy.com/media/1X60lbjgvCGZozIucj/giphy.gif)
 
@@ -19,13 +21,29 @@ $ git clone https://github.com/marygale/it380.git
 $ cd it380
 ```
 
-Setup a database on your local environment with the following credentials:
+To setup the database edit [config.php](config.php) these following lines:
+
+```php
+define( "DB_NAME", "it380" );
+define( "DB_HOST", "localhost" );
+define( "DB_USERNAME", "root" );
+define( "DB_PASSWORD", "" );
+```
 
 |Field  | Value|
 | ------ | ------ |
-| Database name | test |
+| Database name | it380 |
+| Database host | localhost |
 | Database username | root |
 | Database password |  |
 
+**Go to:**
+```
+http://localhost/it380
+```
+
 If test database name already exist on your phpmyadmin make sure no table are present under these database name.
 Initial load will run a sql script to create tables and migrate data from the clean csv to the database.
+
+
+
