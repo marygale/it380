@@ -21,7 +21,7 @@ $ git clone https://github.com/marygale/it380.git
 $ cd it380
 ```
 
-To setup the database edit [config.php](config.php) these following lines:
+To setup the database, edit [config.php](config.php) these following lines:
 
 ```php
 define( "DB_NAME", "it380" );
@@ -30,13 +30,6 @@ define( "DB_USERNAME", "root" );
 define( "DB_PASSWORD", "" );
 ```
 
-|Field  | Value|
-| ------ | ------ |
-| Database name | it380 |
-| Database host | localhost |
-| Database username | root |
-| Database password |  |
-
 **Go to:**
 ```
 http://localhost/it380
@@ -44,6 +37,3 @@ http://localhost/it380
 
 If test database name already exist on your phpmyadmin make sure no table are present under these database name.
 Initial load will run a sql script to create tables and migrate data from the clean csv to the database.
-
-
-
