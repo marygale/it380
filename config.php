@@ -1,7 +1,7 @@
 <?php
 //set off all error for security purposes
 error_reporting(E_ALL);
-define( "DB_NAME", "it380" );
+define( "DB_NAME", "test" );
 define( "DB_HOST", "localhost" );
 define( "DB_USERNAME", "root" );
 define( "DB_PASSWORD", "" );
